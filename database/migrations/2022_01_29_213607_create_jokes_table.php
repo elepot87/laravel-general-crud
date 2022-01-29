@@ -19,6 +19,7 @@ class CreateJokesTable extends Migration
             $table->string('slug');
             $table->text('description', 30);
             $table->tinyInteger('ratings')->unsigned();
+            $table->string('image');
             $table->timestamps();
         });
     }
