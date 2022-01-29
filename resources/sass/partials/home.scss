@@ -1,0 +1,18 @@
+main {
+    flex-grow: 1;
+    .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .cta {
+            width: 150px;
+            display: inline-block;
+        }
+    }
+    .animate__animated.animate__bounceIn {
+        --animate-duration: 3s;
+    }
+}
