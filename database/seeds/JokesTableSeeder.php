@@ -23,6 +23,8 @@ class JokesTableSeeder extends Seeder
             $new_joke->description= $joke['description'];
             $new_joke->ratings= $joke['ratings'];
             $new_joke->image= $joke['image'];
+
+            $new_joke->save();
         }
     }
 }
