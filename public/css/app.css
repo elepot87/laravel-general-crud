@@ -4122,7 +4122,7 @@ main {
   flex-grow: 1;
 }
 
-main .container {
+main .container.home-page {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -4131,12 +4131,46 @@ main .container {
   height: 100%;
 }
 
-main .container .cta {
+main .container.home-page .cta {
   width: 150px;
   display: inline-block;
 }
 
+main .container.home-page .cta a {
+  text-decoration: none;
+  color: #fff;
+}
+
 main .animate__animated.animate__bounceIn {
   --animate-duration: 3s;
+}
+
+main .title {
+  width: 70%;
+  margin: 0 auto;
+}
+
+main .title h1 {
+  color: #ffad01;
+  font-size: 30px;
+  text-align: center;
+}
+
+main .card {
+  height: 600px;
+}
+
+main .card .card-img-top {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+main .card .card-title {
+  color: #ffad01;
+  font-weight: 700;
 }
 

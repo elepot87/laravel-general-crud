@@ -14,8 +14,11 @@ class JokeController extends Controller
      */
     public function index()
     {
-        return view('jokes.index');
+        $jokes = Joke::all();
+
+        return view('jokes.index', compact('jokes'));
     }
+    
 
     /**
      * Show the form for creating a new resource.
