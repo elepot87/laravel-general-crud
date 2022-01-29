@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header .navbar > .container-fluid {
+  flex-wrap: nowrap;
+}
+header .navbar > .container-fluid .navbar-brand .logo {
+  width: 7%;
+}
+header .navbar > .container-fluid .navbar-brand .highlighted {
+  color: #ffad01;
+}
+header .navbar > .container-fluid .navbar-collapse {
+  width: 35%;
+}

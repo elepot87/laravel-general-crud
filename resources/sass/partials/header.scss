@@ -1,0 +1,16 @@
+header {
+    .navbar > .container-fluid {
+        flex-wrap: nowrap;
+        .navbar-brand {
+            .logo {
+                width: 7%;
+            }
+            .highlighted {
+                color: $primary-color;
+            }
+        }
+        .navbar-collapse {
+            width: 35%;
+        }
+    }
+}
