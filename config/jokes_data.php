@@ -8,6 +8,7 @@ return [
         - Perché?
         - Tutta la sera ho bevuto per dimenticarti e adesso ti vedo doppia.',
         'ratings' => 6,
+        'image' => 'https://picsum.photos/id/1062/200/300',
     ],
     [
         'title' => 'Cibo',
@@ -16,6 +17,7 @@ return [
         Marito risponde:
         - E se guarda te, potrebbe pensare che sia colpa tua.',
         'ratings' => 8,
+        'image' => 'https://picsum.photos/id/1080/200/300',
     ],
     [
         'title' => 'Siamo a Napoli',
@@ -24,12 +26,14 @@ return [
         Uno dei passeggeri si gira e dice:
         - Cavolo, Pasquale è caduto.',
         'ratings' => 7,
+        'image' => 'https://picsum.photos/id/146/200/300',
     ],
     [
         'title' => 'Maleducato',
         'description' => 'Durante un incontro di pugilato, uno dei pugili subisce una botta forte e finisce sul tappeto. Mentre l\'arbitro gli sta contando, dal pubblico urla una nonnina:
         - Ma guarda, mica si alza questo; io lo conosco dall\'autobus.',
         'ratings' => 6,
+        'image' => 'https://picsum.photos/id/22/200/300',
     ],
     [
         'title' => 'Vita insieme',
@@ -37,6 +41,7 @@ return [
         - Tu non senti niente?
         - No caro, da anni!',
         'ratings' => 7,
+        'image' => 'https://picsum.photos/id/239/200/300',
     ],
     [
         'title' => 'Topi studiosi',
@@ -48,5 +53,6 @@ return [
         - Bravo! E cosa fa?
         - Il mouse.',
         'ratings' => 8,
+        'image' => 'https://picsum.photos/id/445/200/300',
     ],
 ];
