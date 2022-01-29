@@ -22,6 +22,7 @@ class JokesTableSeeder extends Seeder
             $new_joke->slug= Str::slug($new_joke->title, '-');
             $new_joke->description= $joke['description'];
             $new_joke->ratings= $joke['ratings'];
+            $new_joke->image= $joke['image'];
         }
     }
 }
