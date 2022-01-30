@@ -4,6 +4,7 @@
 
 @section('main-content')
 <main>
+
     <div class="title my-4">
         <h1 class="animate__animated animate__fadeInDown">
             Pagina archivio Jokes
@@ -37,15 +38,16 @@
                                 <form action="{{ route('jokes.destroy', $joke->id) }}" method="post" class="animate__animated animate__zoomIn">
                                     @csrf
                                     @method('DELETE')
-                                    
-                                        <button type="submit" class="btn btn-danger mb-3 form-delete" id="delete">Elimina</button>
-                                    
+                                        <button type="submit" class="btn btn-danger mb-3 form-delete" id="delete">
+                                            Elimina
+                                        </button>          
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>     
             @endforeach
+            {{ $jokes->links() }}
         </div>
     </div>
 </main>

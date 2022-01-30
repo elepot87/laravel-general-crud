@@ -4084,6 +4084,11 @@ body {
   height: 100vh;
 }
 
+.navbar-nav {
+  background-color: #ffad01;
+  padding: 0 10px;
+}
+
 header .navbar > .container-fluid {
   flex-wrap: nowrap;
 }
