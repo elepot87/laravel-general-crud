@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Joke;
 
 class JokeController extends Controller
@@ -27,7 +28,7 @@ class JokeController extends Controller
      */
     public function create()
     {
-        //
+        return view('jokes.create');
     }
 
     /**
@@ -38,7 +39,17 @@ class JokeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        dump($data);
+        // Inserimento nel DB_DATABASE
+        $new_joke = new Joke();
+        // // Generazione slug
+        $data['slug'] = Str::slug($data['title'], '-');
+        // // mass assignment 
+        $new_joke->fill($data); //Fare fillable nel model
+        $new_joke->save();
+        // //  redirect verso pagina dettaglio
+        return redirect()->route('jokes.show', $new_joke->id);
     }
 
     /**

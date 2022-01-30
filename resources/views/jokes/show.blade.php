@@ -6,10 +6,10 @@
 <main>
     <div class="container my-5">
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 animate__animated animate__zoomIn">
                 <img src="{{$joke['image']}}" alt="{{$joke['title']}}" class="image-detail mb-4" >
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 animate__animated animate__zoomIn">
                 <div class="info">
                     <h3>
                         {{$joke['title']}}
