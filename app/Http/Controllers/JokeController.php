@@ -49,7 +49,13 @@ class JokeController extends Controller
      */
     public function show($id)
     {
-        //
+        $joke = Joke::find($id);
+
+        if($joke) {
+            return view('jokes.show', compact('joke'));
+        }
+        abort(404);
+
     }
 
     /**

@@ -17,8 +17,14 @@ main {
             object-position: center;
         }
         .card-title {
-            color: $primary-color;
-            font-weight: 700;
+            a {
+                color: $primary-color;
+                font-weight: 700;
+                text-decoration: none;
+            }
+            a:hover {
+                color: $third-color;
+            }
         }
     }
 }

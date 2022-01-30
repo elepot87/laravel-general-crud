@@ -1,0 +1,29 @@
+.container {
+    .row {
+        .image-detail {
+            width: 100%;
+            object-fit: cover;
+            height: 400px;
+        }
+        .info {
+            h3 {
+                color: $primary-color;
+            }
+        }
+    }
+}
+.back {
+    margin: 48px;
+    padding: 12px;
+    a {
+        text-decoration: none;
+        color: $third-color;
+        .icon-back {
+            margin-right: 5px;
+            font-size: 18px;
+        }
+    }
+    a:hover {
+        color: $primary-color;
+    }
+}
