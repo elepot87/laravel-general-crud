@@ -76,7 +76,13 @@ class JokeController extends Controller
      */
     public function edit($id)
     {
-        //
+       // Ottenere joke da aggiornare
+        $joke = Joke::find($id);
+        // Passare il fumetto specifico alla form di edit
+        if($joke) {
+            return view('jokes.edit', compact('joke'));
+        }
+        abort(404);
     }
 
     /**
@@ -88,7 +94,15 @@ class JokeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+         // colleziono dati che arrivano dal form
+        $data = $request->all();
+        // 1.Ottenere il record da aggiornare 
+        $joke = Joke::find($id);
+        // 2. Aggiornare le colonne e salvare i dati a db
+        $data['slug'] = Str::slug($data['title'], '-'); // Adattiamo slug nel caso qualcuno modifichi il title
+        $joke->update($data); //save() not require
+        // redirect verso pagina dettaglio aggiornato
+        return redirect()->route('jokes.show', $joke->slug);
     }
 
     /**

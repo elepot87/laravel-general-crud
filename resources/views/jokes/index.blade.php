@@ -27,7 +27,7 @@
                             <div class="rating">
                                <strong>Voto:</strong> {{$joke['ratings']}}
                             </div>
-                            <a href="#" class="btn btn-primary my-4">Modifica</a>
+                            <a href="{{ route ('jokes.edit', $joke->id)}}" class="btn btn-primary my-4">Modifica</a>
                             <a href="#" class="btn btn-danger my-4">Cancella</a>
                         </div>
                     </div>
