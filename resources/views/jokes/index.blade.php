@@ -17,7 +17,7 @@
                         <img src="{{$joke['image']}}" alt="{{$joke['title']}}" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a href="{{route('jokes.show', $joke->id)}}">
+                                <a href="{{route('jokes.show', $joke->slug)}}">
                                     {{$joke['title']}}
                                 </a>
                             </h5>

@@ -40,7 +40,6 @@ class JokeController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
-        dump($data);
         // Inserimento nel DB_DATABASE
         $new_joke = new Joke();
         // // Generazione slug
@@ -58,9 +57,9 @@ class JokeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        $joke = Joke::find($id);
+        $joke = Joke::where('slug', $slug)->first();
 
         if($joke) {
             return view('jokes.show', compact('joke'));
