@@ -36,5 +36,8 @@
             </form>
         </div>
     </div>
+    <div class="back">
+        <a href="{{route('jokes.index')}}"><i class="fas fa-arrow-left icon-back"></i>Torna alla pagina di archivio</a>
+    </div>
 </main>
 @endsection

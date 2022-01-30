@@ -113,6 +113,11 @@ class JokeController extends Controller
      */
     public function destroy($id)
     {
-        //
+         // Prende il record con l'id selezionato
+        $joke = Joke::find($id);
+        // Cancella il record selezionato
+        $joke->delete();
+        // Redirect verso pagina gallery
+        return redirect()->route('jokes.index')->with('delete', $joke->title);
     }
 }

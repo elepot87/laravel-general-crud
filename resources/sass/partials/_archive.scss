@@ -16,14 +16,23 @@ main {
             object-fit: cover;
             object-position: center;
         }
-        .card-title {
-            a {
-                color: $primary-color;
-                font-weight: 700;
-                text-decoration: none;
+        .card-body {
+            .card-title {
+                a {
+                    color: $primary-color;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: $third-color;
+                }
             }
-            a:hover {
-                color: $third-color;
+            .cta-buttons {
+                display: flex;
+                .form-delete {
+                    margin: 24px 0;
+                    padding: 6px 12px;
+                }
             }
         }
     }

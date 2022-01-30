@@ -9,6 +9,13 @@
             h3 {
                 color: $primary-color;
             }
+            .cta-buttons {
+                display: flex;
+                .form-delete {
+                    margin: 24px 0;
+                    padding: 6px 12px;
+                }
+            }
         }
     }
 }

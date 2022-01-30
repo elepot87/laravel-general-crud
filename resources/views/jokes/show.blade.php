@@ -20,10 +20,15 @@
                     <div class="rating">
                         <strong>Voto:</strong> {{$joke['ratings']}}
                     </div>
-                    <div class="buttons">
-                        <a href="#" class="btn btn-primary my-4">Modifica</a>
-                            <a href="#" class="btn btn-danger my-4">Cancella</a>
-                        </div>
+                    <div class="cta-buttons">
+                        <a href="{{ route ('jokes.edit', $joke->id)}}" class="btn btn-primary my-4 me-4">Modifica</a>
+                        <form action="{{ route('jokes.destroy', $joke->id) }}" method="post" class="animate__animated animate__zoomIn">
+                        @csrf
+                        @method('DELETE')
+                            <button type="submit" class="btn btn-danger mb-3 form-delete" id="delete">
+                                Elimina
+                            </button>
+                            </form>
                     </div>
                 </div>
             </div>

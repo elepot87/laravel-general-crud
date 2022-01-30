@@ -4156,13 +4156,20 @@ main .card .card-img-top {
   -o-object-position: center;
      object-position: center;
 }
-main .card .card-title a {
+main .card .card-body .card-title a {
   color: #ffad01;
   font-weight: 700;
   text-decoration: none;
 }
-main .card .card-title a:hover {
+main .card .card-body .card-title a:hover {
   color: #757576;
+}
+main .card .card-body .cta-buttons {
+  display: flex;
+}
+main .card .card-body .cta-buttons .form-delete {
+  margin: 24px 0;
+  padding: 6px 12px;
 }
 
 .container .row .image-detail {
@@ -4173,6 +4180,13 @@ main .card .card-title a:hover {
 }
 .container .row .info h3 {
   color: #ffad01;
+}
+.container .row .info .cta-buttons {
+  display: flex;
+}
+.container .row .info .cta-buttons .form-delete {
+  margin: 24px 0;
+  padding: 6px 12px;
 }
 
 .back {

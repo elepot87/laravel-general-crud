@@ -19,9 +19,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('jokes.create')}}">Create Jokes</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
-                </li>
             </ul>
         </div>
     </div>
