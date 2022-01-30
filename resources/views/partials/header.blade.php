@@ -17,7 +17,9 @@
                     aria-current="page" href="{{route('jokes.index')}}">Jokes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('jokes.create')}}">Create Jokes</a>
+                    <a class="nav-link @if (Request::route()->getName()==='jokes.create')
+                        active
+                    @endif" href="{{route('jokes.create')}}">Create Jokes</a>
                 </li>
             </ul>
         </div>
