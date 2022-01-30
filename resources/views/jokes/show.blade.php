@@ -7,7 +7,7 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <img src="{{$joke['image']}}" alt="{{$joke['title']}}" class="image-detail" >
+                <img src="{{$joke['image']}}" alt="{{$joke['title']}}" class="image-detail mb-4" >
             </div>
             <div class="col-12 col-lg-6">
                 <div class="info">
