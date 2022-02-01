@@ -12,5 +12,8 @@ header {
         .navbar-collapse {
             width: 35%;
         }
+        .nav-link.active {
+            color: $primary-color;
+        }
     }
 }

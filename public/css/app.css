@@ -4096,6 +4096,9 @@ header .navbar > .container-fluid .navbar-brand .highlighted {
 header .navbar > .container-fluid .navbar-collapse {
   width: 35%;
 }
+header .navbar > .container-fluid .nav-link.active {
+  color: #ffad01;
+}
 
 .footer {
   color: #000;
